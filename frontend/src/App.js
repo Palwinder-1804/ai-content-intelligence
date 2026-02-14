@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
 import UploadPanel from "./components/UploadPanel";
 import SummaryPanel from "./components/SummaryPanel";
 import FlashcardsPanel from "./components/FlashcardsPanel";
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="app">
-      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
 
       <div className="main">
         <UploadPanel setSessionId={setSessionId} />
