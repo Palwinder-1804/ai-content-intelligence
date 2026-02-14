@@ -56,7 +56,10 @@ function ChatPanel({ sessionId }) {
 
   return (
     <div className="card">
-      <h3>💬 Chat with Document</h3>
+      <h3>💬 Chat</h3>
+      <p style={{ color: "#64748b", marginBottom: "12px", fontSize: "14px" }}>
+        Search your document or ask anything—answers use your content when relevant, or general knowledge otherwise.
+      </p>
 
       <ErrorMessage message={error} onDismiss={() => setError("")} />
 
@@ -64,9 +67,9 @@ function ChatPanel({ sessionId }) {
         {messages.length === 0 ? (
           <div style={{ textAlign: "center", color: "#64748b", padding: "40px" }}>
             <div style={{ fontSize: "48px", marginBottom: "10px" }}>💬</div>
-            <div>Start a conversation with your document</div>
+            <div>Ask about your document or any general question</div>
             <div style={{ fontSize: "14px", marginTop: "10px" }}>
-              Ask questions and get AI-powered answers based on your content
+              e.g. &quot;What does section 3 say?&quot; or &quot;Explain machine learning basics&quot;
             </div>
           </div>
         ) : (

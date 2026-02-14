@@ -32,7 +32,6 @@ def extract_youtube_video(url: str):
     return result["text"]
 
 
-# 🔥 THIS WAS MISSING
 def summarize_youtube(url: str):
 
     transcript = extract_youtube_video(url)

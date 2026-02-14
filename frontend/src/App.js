@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar";
 import UploadPanel from "./components/UploadPanel";
 import SummaryPanel from "./components/SummaryPanel";
 import FlashcardsPanel from "./components/FlashcardsPanel";
-import SearchPanel from "./components/SearchPanel";
+import InsightPanel from "./components/InsightPanel";
 import ChatPanel from "./components/ChatPanel";
 import VideoPanel from "./components/VideoPanel";
 import "./styles.css";
@@ -27,8 +27,8 @@ function App() {
           <FlashcardsPanel sessionId={sessionId} />
         )}
 
-        {activeTab === "search" && sessionId && (
-          <SearchPanel sessionId={sessionId} />
+        {activeTab === "insights" && sessionId && (
+          <InsightPanel sessionId={sessionId} />
         )}
 
         {activeTab === "chat" && sessionId && (

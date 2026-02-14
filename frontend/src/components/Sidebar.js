@@ -4,7 +4,7 @@ function Sidebar({ activeTab, setActiveTab }) {
   const menuItems = [
     { id: "summary", label: "📝 Summary", icon: "📝" },
     { id: "flashcards", label: "🎓 Flashcards", icon: "🎓" },
-    { id: "search", label: "🔍 Search", icon: "🔍" },
+    { id: "insights", label: "💡 Insights", icon: "💡" },
     { id: "chat", label: "💬 Chat", icon: "💬" },
     { id: "video", label: "🎥 Video", icon: "🎥" },
   ];
